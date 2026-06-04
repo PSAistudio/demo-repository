@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "references": [
+    { "path": "packages/db/tsconfig.json" },
+    { "path": "packages/core/tsconfig.json" },
+    { "path": "packages/api/tsconfig.json" },
+    { "path": "packages/dashboard/tsconfig.json" }
+  ]
+}

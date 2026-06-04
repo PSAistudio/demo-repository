@@ -1,0 +1,29 @@
+{
+  "name": "@thai-bank/db",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/client.js",
+  "types": "dist/client.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/client.d.ts",
+      "default": "./dist/client.js"
+    },
+    "./schemas": {
+      "types": "./dist/schemas/index.d.ts",
+      "default": "./dist/schemas/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "db:migrate": "tsx src/migrate.ts"
+  },
+  "dependencies": {
+    "pg": "^8.11.0",
+    "kysely": "^0.27.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.0",
+    "typescript": "^5.4.0"
+  }
+}
