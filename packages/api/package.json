@@ -1,0 +1,18 @@
+{
+  "name": "@thai-bank/api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/routes/index.js",
+  "types": "dist/routes/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "@thai-bank/core": "*",
+    "@thai-bank/db": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
