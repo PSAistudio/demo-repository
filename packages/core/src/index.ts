@@ -48,3 +48,44 @@ export {
   type Pacs008Message,
   type Pacs002Message,
 } from "./bot-adapter/iso20022.js";
+
+// Loan schedule calculator
+export {
+  calculateFlatRateSchedule,
+  calculateReducingBalanceSchedule,
+  calculateEffectiveRateSchedule,
+  type ScheduleEntry,
+} from "./loans/calculator.js";
+
+// Loan lifecycle
+export {
+  createLoan,
+  approveLoan,
+  disburseLoan,
+  recordPayment,
+  classifyNPA,
+  type CreateLoanParams,
+  type LoanResult,
+  type NPAClassification,
+} from "./loans/lifecycle.js";
+
+// Card lifecycle
+export {
+  issueCard,
+  activateCard,
+  blockCard,
+  recordCardTransaction,
+  checkCreditLimit,
+  maskCardNumber,
+  type IssueCardParams,
+  type CardResult,
+} from "./cards/lifecycle.js";
+
+// FX operations
+export {
+  getFxRate,
+  executeFxTransaction,
+  checkBotReportingThreshold,
+  type FxRateResult,
+  type FxTransactionResult,
+} from "./fx/operations.js";
